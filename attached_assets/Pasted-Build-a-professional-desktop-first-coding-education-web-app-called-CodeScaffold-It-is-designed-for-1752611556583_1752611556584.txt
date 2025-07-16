@@ -1,0 +1,154 @@
+Build a professional, desktop-first coding education web app called CodeScaffold. It is designed for beginner and intermediate programmers to learn through interactive code scaffolding. The app should NOT use drag-and-drop blocks, but instead provide real syntax-based code snippet insertion in a real IDE-like interface.
+
+📐 Layout Structure (3-Panel + Top Bar Layout):
+Use a fixed-height, full-width layout suitable for large desktop screens.
+
+Divide the interface into the following four zones:
+
+Top Navigation Bar (horizontal, spans full width)
+
+Left Sidebar – Code Components Panel
+
+Center Editor Panel – Code Editor
+
+Bottom Console Panel – Output Console
+
+Ensure all panels are visible at once. No full-page transitions. Prioritize a stable workspace feel.
+
+🔝 Top Navigation Bar (Fixed, Horizontal):
+Left: App logo or name – "CodeScaffold"
+
+Center: Optional breadcrumb or lesson/module title
+
+Right:
+
+Language Selector Dropdown – options: Python, JavaScript, C++, Java
+
+Run Button – primary action, colored (blue or green), prominent
+
+Save Button – secondary action, gray/outlined
+
+Use icons only beside buttons (Run ▶, Save 💾), no text labels for a clean, modern look
+
+🧩 Left Sidebar – Code Components Panel:
+Title: Code Components
+
+Sections should be collapsible, each with an icon:
+
+📦 Variables
+
+🔁 Loops
+
+⚖️ Conditionals
+
+🧮 Functions
+
+📤 Output
+
+📄 Input
+
+Each section contains buttons that insert code snippets into the editor.
+
+Clicking a snippet should:
+
+Insert the code into the editor at the current cursor position
+
+Use correct indentation and placeholders (e.g., # type your logic here)
+
+Sidebar design:
+
+Vertical scroll
+
+Light background, clean layout
+
+Subtle hover animation
+
+Slim, space-efficient
+
+🖥️ Center Panel – Code Editor:
+Use Monaco Editor or VS Code-style editor interface
+
+Fully editable code area, dark theme
+
+Features:
+
+Syntax highlighting
+
+Auto-indentation
+
+Line numbers
+
+Editable placeholders for snippets:
+
+python
+Copy
+Edit
+for i in range(10):
+    # type your logic here
+Snippets should feel "typed" not "dragged"
+
+Real-time language support: change syntax rules based on the selected language (Python, JS, etc.)
+
+📟 Bottom Panel – Output Console:
+Title: Output
+
+Terminal-style design
+
+Displays:
+
+Code output (e.g., printed text, return values)
+
+Runtime errors with line numbers
+
+Design:
+
+Monospace font
+
+Scrollable if output is long
+
+Minimal border
+
+Light or dark theme based on contrast with editor
+
+🎨 Styling Guidelines:
+Professional & minimalistic, targeted toward serious students and early professionals
+
+Dark-themed editor only; rest of UI in neutral/light colors
+
+No gamification elements
+
+Subtle hover and focus effects
+
+Run button must be clearly primary and visually highlighted
+
+Use intuitive icons throughout
+
+Avoid clutter; ensure good spacing and alignment
+
+🧠 Functionality Goals:
+Users can insert code snippets to scaffold their logic
+
+Users can manually edit all code freely
+
+Clicking Run executes the code in-browser and shows result in Output
+
+Clicking Save stores the project to browser or backend
+
+Changing language switches editor syntax mode, clears or resets code
+
+🔧 Optional Add-ons (only if the builder supports logic features):
+Track user changes and store them in local storage
+
+Enable saving and loading of projects
+
+Support basic validation to show syntax errors inline
+
+Allow keyboard shortcuts (Ctrl+S to Save, Ctrl+Enter to Run)
+
+📱 Responsiveness:
+Target primarily desktop layout
+
+Mobile support is optional or minimal
+
+Ensure panels resize gracefully with screen width
+
